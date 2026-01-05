@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+개인 포트폴리오 웹사이트입니다.  
+단순히 결과물을 나열하기보다는, **어떤 문제를 어떻게 고민하고 설계했는지**를 보여주는 공간을 목표로 만들고 있습니다.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ 목표
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 하나의 완성된 결과물이 아니라 **계속 확장·개선되는 포트폴리오**
+- UI 구현 능력뿐 아니라 **구조 설계, 인터랙션, 유지보수성**을 함께 보여주기
+- 기술 스택을 나열하기보다 **실제 사용 맥락과 선택 이유**를 드러내기
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧭 컨셉
 
-## Learn More
+- **타이포그래피 중심의 미니멀한 디자인**
+- 과하지 않은 애니메이션과 인터랙션
+- 콘텐츠에 집중할 수 있는 여백과 흐름
+- 스크롤을 따라 자연스럽게 읽히는 원페이지 구조
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧩 섹션 구성
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Header
 
-## Deploy on Vercel
+- 메뉴 클릭 시 해당 섹션으로 **부드러운 스크롤 이동**
+- 현재 위치한 섹션을 인지할 수 있는 인터랙션
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### About
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 별도의 링크 이동 없이 메인 페이지에서
+- **큰 타이포그래피로 나를 설명하는 영역**
+- 기술보다 가치관과 방향성에 초점을 둠
+
+### Skills
+
+- 메인 페이지에서는 요약 형태로 노출
+- `자세히 보기`를 통해 서브 페이지(`/skills`)로 이동
+- 단순 스택 나열이 아닌  
+  **실제로 사용하며 고민했던 기술, 구현 방식, 문제 해결 경험**을 하나씩 기록하는 공간
+
+### Career
+
+- 지금까지의 경력을 문서처럼 읽히는 구조로 구성
+- 기간의 흐름이 직관적으로 보이도록  
+  **시각적 타임라인 인터랙션**을 적용
+- 역할, 기여도, 고민했던 포인트를 중심으로 서술
+
+### Learning
+
+- 개발뿐 아니라 개발 외 영역까지 포함한 학습 기록
+- 진행 중 / 완료 / 예정 상태를 구분
+- 관심사의 변화와 확장을 보여주는 섹션
+
+### Contact
+
+- 과한 폼 대신 간결한 메시지와 링크 중심
+- 언제든지 편하게 연락할 수 있는 마무리 섹션
+
+---
+
+## 🛠 기술 스택
+
+- **Next.js (App Router)**
+- **TypeScript**
+- **React**
+- **Tailwind CSS**
+- **React Query**
+- Canvas API (인터랙션/비주얼 표현)
+
+> 필요 이상의 라이브러리는 지양하고,  
+> “왜 이 기술이 필요한지”가 명확한 경우에만 도입하는 것을 원칙으로 합니다.
+
+---
+
+## 🧠 구현 방향
+
+- UI와 데이터 구조 분리 (`data` 기반 설계)
+- 컴포넌트는 최대한 **역할이 명확하도록 분리**
+- 애니메이션은 UX를 방해하지 않는 선에서 최소화
+- 접근성(a11y)과 반응형을 기본 전제로 구현
+
+---
+
+## 🚧 진행 상태
+
+이 포트폴리오는 **완성형이 아닌 진행형**입니다.  
+섹션과 콘텐츠는 계속 추가·개선될 예정이며,  
+새로운 기술 실험이나 고민이 생길 때마다 반영됩니다.
+
+---
+
+## 📌 기타
+
+- 이 저장소는 개인 학습 및 포트폴리오 용도로 운영됩니다.
+- 코드 스타일이나 구조는 상황에 따라 리팩터링될 수 있습니다.
