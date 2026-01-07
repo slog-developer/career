@@ -9,6 +9,7 @@ export default function Home() {
         <p className="mt-4 text-sm text-neutral-700">
           간단한 소개와 역할, 관심 분야를 한두 문장으로 정리합니다.
         </p>
+        <h4>stage section</h4>
       </section>
       <section id="skills" className="mx-auto w-full max-w-4xl px-4 py-12">
         <h2 className="text-xl font-semibold">Skills</h2>
@@ -17,6 +18,7 @@ export default function Home() {
           <li>Styling: Tailwind CSS, CSS Modules</li>
           <li>Tools: Git, Vercel, Figma</li>
         </ul>
+        <p>스테이지에서 변경한 사항 테스트</p>
       </section>
       <section id="career" className="mx-auto w-full max-w-4xl px-4 py-12">
         <h2 className="text-xl font-semibold">Career</h2>
