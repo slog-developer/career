@@ -9,6 +9,10 @@ export default function Home() {
         <p className="mt-4 text-sm text-neutral-700">
           간단한 소개와 역할, 관심 분야를 한두 문장으로 정리합니다.
         </p>
+        <ul>
+          <li>feat-one</li>
+          <li>feat-two</li>
+        </ul>
       </section>
       <section id="skills" className="mx-auto w-full max-w-4xl px-4 py-12">
         <h2 className="text-xl font-semibold">Skills</h2>
